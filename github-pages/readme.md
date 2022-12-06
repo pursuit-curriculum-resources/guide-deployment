@@ -27,6 +27,8 @@ Next, you will want to create an `index.html` file. Create the file and add the 
 </html>
 ```
 
+> **Note**: At least one page must be named `index.html` in order for your website to be deployed with GitHub pages.
+
 You can open up the file in your browser using the following command within your `my-first-github-page/` directory.
 
 ```
@@ -70,6 +72,8 @@ On the new page, underneath the "Branch" option, select "main" and then click th
 
 ![Deploying to GitHub.](./assets/github-deploying.png)
 
-Give GitHub a moment or two and then refresh the page. At the top of the **Settings** page, you should now see a link to your deployed site. Click that link and you will be able to visit your page!
+Give GitHub a minute or two and then refresh the page. At the top of the **Settings** page, you should now see a link to your deployed site. Click that link and you will be able to visit your page!
 
 ![Deployed link.](./assets/deployed.png)
+
+If you are unable to see your page after a few minutes, try hard refreshing or a different browser.
