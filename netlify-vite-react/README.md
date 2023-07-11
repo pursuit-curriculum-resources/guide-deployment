@@ -54,7 +54,7 @@ Scroll down and select `Configure the Netlify app on GitHub`.
 
 ![Github Netlify Configuration](./assets/3.github-netlify-config.png)
 
-Choose configure to install Netlify on your GitHub account.
+Choose Configure to install Netlify on your GitHub account.
 
 ![Install Netlify on GitHub](./assets/4.install-netlify-on-github.png)
 
@@ -70,7 +70,9 @@ Once selected, your view should return to the Netlify dashboard.
 
 ![Choose repository on Netlify](./assets/7.choose-repo-on-netlify.png)
 
-Keep the default settings provided and choose the `Deploy site` button.
+Check the default settings provided and choose the `Deploy site` button.
+
+**Note**: Vite's default `Publish directory` is called `build`. Be sure to update this field. 
 
 ![Create configuration for deploy site](./assets/8.create-configure.png)
 
@@ -86,13 +88,13 @@ Check for the line `Site is live ✨` to confirm your site is live.
 
 ![Site is live message](./assets/11.site-is-live.png)
 
-Go to the `Deploys` tab, and click on the link to see your site live. You can also share this link with your friends and family!
+Go to the `Deploys` tab, and click the link to see your site live. You can also share this link with your friends and family!
 
 ![Deploys view](./assets/12.deploys-view.png)
 
 While adding to your app, you should work on another branch like `dev` and only merge into `main` when your new features are working.
 
-Think about a professional setting. If you visit your favorite website and it is down, you will be very unhappy. Therefore it is critical that applications are built and tested on other branches and that only working changes are merged to the `main` branch.
+Think about a professional setting. You will be very unhappy if you visit your favorite website and it is down. Therefore, applications must be built and tested on other branches, and only working changes are merged to the `main` branch.
 
 This workflow would look similar to this:
 
