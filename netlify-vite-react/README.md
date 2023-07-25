@@ -72,9 +72,8 @@ Once selected, your view should return to the Netlify dashboard.
 
 Check the default settings provided and choose the `Deploy site` button.
 
-**Note**: Vite's default `Publish directory` is called `build`. Be sure to update this field. 
+**Note**: Vite's default `Publish directory` is called `dist`. Be sure to confirm this field. 
 
-![Create configuration for deploy site](./assets/8.create-configure.png)
 
 See the status of your deployment. Click on it to see more details.
 
