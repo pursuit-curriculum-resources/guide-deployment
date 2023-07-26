@@ -30,7 +30,7 @@ Today's lesson will be a walk-through on how to get a Create-React App deployed 
 
 ![GitHub new repo from existing project](./assets/github-new-repo-from-existing-project.png)
 
-> **Note:** If you do not have the above view for a new GitHub repository, the easiest thing is to delete it and start again. If you see a different view it is likely you selected some options from the previous menu.
+> **Note:** If you do not have the above view for a new GitHub repository, it is easiest to delete it and start again. If you see a different view, you likely selected some options from the previous menu.
 
 - Confirm your React app code is now on GitHub.
 
@@ -46,7 +46,7 @@ Log on to (or create an account on) Netlify, go to `Team Overview`, and select `
 
 ![Team overview](./assets/1.team-overview.png)
 
-Choose the `GitHub` button - this will take you to a GitHub authentication view.
+Choose the `GitHub` button to take you to a GitHub authentication view.
 
 ![Create new site](./assets/2.create-new-site.png)
 
@@ -105,7 +105,7 @@ git push origin dev
 
 Then go to GitHub, open a pull request for your `dev` branch, and follow the steps to merge your changes from `dev` into `main`.
 
-Once continuous deployment is set up, a change to `main` will trigger Netlify to start a new build.
+Once continuous deployment is set up, changing to `main` will trigger Netlify to start a new build.
 
 Note:
 
@@ -114,7 +114,7 @@ Note:
 
 ## Adding environmental variables to your application
 
-With Vite App, you can add environmental variables using a `.env` file. This file is not tracked by git (it should be listed in the `.gitignore`) file.
+With Vite App, you can add environmental variables using a `.env` file. This file is not tracked by git (it should be listed in the `.gitignore`).
 
 All of the environmental variables must start with
 
@@ -128,7 +128,7 @@ Here is an example:
 VITE_KEY=my-secret-key-value
 ```
 
-Notice that this file is not written in JavaScript, so do not use quotes or semi-colons.
+This file is not written in JavaScript, so do not use quotes or semi-colons.
 
 To use this variable in your application. Choose a component where you will use this variable and write:
 
@@ -156,15 +156,15 @@ Add, edit and delete environmental variables here.
 
 The name of these variables should match what is in your app.
 
-In summary, you will have a `.env` file that will only be on your computer. It will not be tracked with git, and it should not end up on GitHub. To add the values inside the `.env` file, you will go to your app's Netlify settings page and add them there to make them available for the live version of your application.
+In summary, you will have a `.env` file that will only be on your computer. It will not be tracked with git and should not end up on GitHub. To add the values inside the `.env` file, you will go to your app's Netlify settings page and add them there to make them available for the live version of your application.
 
-> **Note:** This method of hiding the API key is sufficient for free API keys. If you are using more valuable keys (ones that required you to use a credit card), you will want to take extra steps for security. You can read about [further steps to take on the Netlify website](https://answers.netlify.com/t/support-guide-how-do-i-keep-my-api-keys-tokens-safe-using-netlify-functions/293).
+> **Note:** This method of hiding the API key is sufficient for free API keys. If you are using more valuable keys (ones that require you to use a credit card), you will want to take extra steps for security. You can read about [further steps to take on the Netlify website](https://answers.netlify.com/t/support-guide-how-do-i-keep-my-api-keys-tokens-safe-using-netlify-functions/293).
 
 ## Allow for links to different views
 
-The default configuration on Netlify only shows a Create React App's first/home view. If you have configured React Router and have an `about` page (or any other page view) and sent a URL to the `/about` page to a friend, it will give a 404 or redirect back to the home view.
+The default configuration on Netlify only shows a React App's root (home page) view. If you have configured React Router, have an `about` page (or any other page view), and sent a URL to the `/about` page to a friend, it will give a 404 or redirect back to the home view.
 
-To configure the ability to send a specific page view URL, you must create a file called `_redirects` inside the `public` folder of your app.
+To configure the ability to send a specific page view URL, you must create a file called `_redirects` inside your app's `public` folder.
 
 This file (**public/\_redirects**) must contain the following text:
 
