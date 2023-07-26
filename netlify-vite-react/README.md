@@ -134,14 +134,14 @@ To use this variable in your application. Choose a component where you will use 
 
 ```js
 // Example file: src/App.js
-process.env.VITE_KEY;
+import.meta.env.VITE_KEY;
 ```
 
 You can confirm that you are getting the expected value by logging it:
 
 ```js
 // Example file: src/App.js
-console.log(`${process.env.VITE_KEY}`);
+console.log(`${import.meta.env.VITE_KEY}`);
 ```
 
 ## Adding environmental variables to your Netlify deployment
@@ -150,7 +150,7 @@ Choose `site settings`, then in the `General` menu, find `Build and deploy`, the
 
 ![General menu](./assets/general-menu.png)
 
-Add, edit and delete environmental variables here.
+Add, edit, and delete environmental variables here.
 
 ![Environmental variables](./assets/vite-env-on-netlify-example.png)
 
